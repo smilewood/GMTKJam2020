@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: enemySounds
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters: []
+  m_AudioMixerGroupViews: []
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 4f7cc6a72e30d9e4eaa9640c8781124b
+  m_Children: []
+  m_Volume: 5fcac6c366544e4489ef5ffdb4d244d2
+  m_Pitch: 7ac89491d0f78474084ab4ca73205e09
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 24400004}
+  - {fileID: 6321532319828049496}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: a9c502f55e6efa34281f4b0bd644a55e
+  m_EffectName: Attenuation
+  m_MixLevel: 39163e64c161df64cbe1f2b081185e10
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: fe57868df5150a845a47b3667faf6da6
+  m_FloatValues:
+    5fcac6c366544e4489ef5ffdb4d244d2: -10
+    2a7bdc1ffd384994eb9fc1f29a1daaec: -20
+  m_TransitionOverrides: {}
+--- !u!244 &6321532319828049496
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 1c986ce34bbb11f49a8746e110aaa334
+  m_EffectName: Compressor
+  m_MixLevel: 6ed88f7773d47534ca99d174c4a9df90
+  m_Parameters:
+  - m_ParameterName: Threshold
+    m_GUID: 2a7bdc1ffd384994eb9fc1f29a1daaec
+  - m_ParameterName: Attack
+    m_GUID: a8789c366ce4a2c4c8ff409545137bcd
+  - m_ParameterName: Release
+    m_GUID: 0ec0bec8449c8ab4d974e48537884dd1
+  - m_ParameterName: Make up gain
+    m_GUID: c2e9f0fb39c76364e9bbfd9406f773ef
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
